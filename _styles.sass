@@ -1,0 +1,200 @@
+//header
+header
+    +flex-center($space: space-around)
+    +color-revers
+
+    @extend h1
+
+    li
+        font-size: 20px
+
+.logo-div
+    +flex-center($space: space-between)
+    width: 25%
+    
+.logo
+    width: 15%
+
+.logo-name
+    font-size: 30px
+    white-space: nowrap
+
+.nav-ul
+    +flex-center($space: space-between)
+    width: 45%
+
+
+//slider
+.slider
+    +flex-center($space: space-between)
+
+    .slider-arrows
+        +flex-center
+        flex-grow: 1
+        height: auto
+        align-self: stretch
+        width: 8%
+        background-color: rgba(255, 255, 255, 0.1)
+        cursor: pointer
+            
+        .arrow
+            width: 50%
+
+.slider-img
+    width: 84%
+    position: relative
+    height: inherit
+    overflow: hidden
+    +flex-center
+
+    .img-window
+        position: relative
+        height: inherit
+        +flex-center
+
+    .photo
+        width: 100%
+        aspect-ratio: 4/3
+        transition: 2s
+
+
+//for slider animation
+.not-display
+    display: none
+
+.prev
+    order: 1
+
+.active
+    order: 2
+
+.next
+    order: 3
+
+
+//about-me
+.about-me
+    +chapter
+
+    height: 790px
+
+.content-about
+    +flex-center($space: space-evenly)
+    
+.about-photo
+    width: 482px
+
+.about-info
+    +flex-column
+    +flex-center($space: space-between)
+    align-items: start
+    width: 40%
+    height: 100%
+
+    .phrase
+        font:
+            family: "Montserrat"
+            size: 20px
+    .contacts-btn
+        @extend .phrase
+        border: none
+        background-color: white
+        height: 53px
+        width: 190px
+        transition: 500ms
+
+        &:hover
+            cursor: pointer
+            background-color: rgba(255, 255, 255, 0.8)
+            
+//pricing
+.pricing
+    +chapter
+    height: 700px
+    
+    .content-pricing
+        +flex-center
+        gap: 3%
+        height: 80%
+
+        .card
+            width: 25%
+            height: 100%
+
+            .card-header
+                +chapter
+                +color-revers
+                height: 30%
+
+                .card-time-info
+                    +main-font
+                    color: rgba(0, 0, 0, 0.5)
+
+            .card-body
+                +flex-column
+                justify-content: space-between
+                height: 70%
+                background-color: rgba(255, 255, 255, 0.1)
+                box-sizing: border-box
+                padding: 5%
+                +main-font
+
+                .card-body-list
+                    +flex-column
+                    justify-content: space-evenly
+                    height: 100%
+
+                    .card-info::before
+                        content: "·"
+                        float: left
+                        padding: 0 0.5em 0 0.5em
+
+                .first-card-body-list
+                    @extend .card-body-list
+                    height: 60%
+
+                .services-list 
+                    @extend .card-body-list
+                    height: 20%
+//footer
+.contacts
+    +chapter
+    height: 200px
+
+
+    .content-contacts
+        +flex-center($space: space-between)
+        width: 70%
+        height: 30%
+
+        .phone-email-info
+            +flex-center($space: space-between)
+            width: 30%
+            height: 100%
+            +main-font
+
+            .phone-email
+                +chapter
+                align-items: stretch
+                height: 100%
+            
+            .phone-email-label
+                @extend .phone-email
+
+        .messengers-info
+            +flex-center($space: space-between)
+            width: 20%
+
+            .icon
+                width: 20%
+                cursor: pointer
+
+.signature
+    +flex-center
+    height: 30px
+    font:
+        family: "Montserrat"
+        size: 10px
+            
+    
+

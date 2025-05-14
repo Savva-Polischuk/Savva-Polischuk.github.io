@@ -1,0 +1,110 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel='stylesheet', type='text/css', href='styles.css')
+        title Савва Полищук
+    body
+        header
+            .logo-div
+                img.logo(src='materials/logo-svg.svg')
+                h1.logo-name Савва Полищук
+            ul.nav-ul
+                li
+                    a(href="#slider") Портфолио
+                li
+                    a(href="#about-me") О себе
+                li
+                    a(href="#pricing") Услуги
+                li
+                    a(href="#contacts") Контакты
+        .slider#slider
+            .slider-arrows#back
+                img.arrow(src="materials/back-arr.svg")
+            .slider-img
+                .img-window
+                    img.photo.active(src="materials/гирлянда.jpg")
+                    img.photo.next(src="materials/елка и луна.jpg")
+                    img.photo.not-display(src="materials/три дерева.jpg")
+                    img.photo.prev(src="materials/окно.jpg")
+            .slider-arrows#forward
+                img.arrow(src="materials/forward-arr.svg")
+        .about-me#about-me
+            h1.title-about О себе
+            .content-about 
+                img.about-photo(src="materials/савва фото.jpg")
+                .about-info
+                    p.phrase Меня зовут Савва Полищук. Я фотограф.  Занимаюсь фотосъемкой более 4 лет
+                    p.phrase Моя специальность - фотосессии. Это может быть фотоальбом на свадьбу, выпускной, семейные фотосессии.
+                    p.phrase Я подберу вам локации и стиль, которые сделают фотосессию уникальной. Я помогу вам подобрать и обработать лучшие кадры. В моменте фотосессии покажу получившиеся кадры, чтобы вы сами могли решить и обсудить, что вам нравится или не нравится
+                    p.phrase Я стараюсь делать свои фотографии похожими на яркие воспоминания. Мой слоган «Зафиксирую моменты, которые станут вечностью»
+                    p.phrase Вы можете написать мне на почту, телеграм, whatsapp или позвонить по телефону.
+
+                    
+                    a(href="#contacts")
+                        button.contacts-btn Контакты
+        .pricing#pricing
+            h1.title-pricing Услуги
+            .content-pricing 
+                .card
+                    .card-header
+                        h3.card-name “Обычный”
+                        h1.card-price 10 000 ₽
+                        p.card-time-info в час
+                    .card-body
+                        ul.first-card-body-list
+                            li.card-info Съёмка от 1 часа
+                            li.card-info Предварительная консультация
+                            li.card-info Помощь в подборе локаций
+                            li.card-info От 70 обработанных фотографий
+                            li.card-info Сроки отдачи - от 14-30 дней
+                        p.services-label Дополнительные услуги:
+                        ul.services-list 
+                            li.card-info Обработать Ваши фото вне очереди (сроки готовности до 5 дней) - 5 000 рублей
+                .card
+                    .card-header
+                        h3.card-name “Продвинутый”
+                        h1.card-price 70 000 ₽
+                        p.card-time-info до 10 часов
+                    .card-body
+                        ul.card-body-list
+                            li.card-info Съёмка до 10 часов
+                            li.card-info Предварительная консультация
+                            li.card-info Помощь в подборе локаций.
+                            li.card-info 400 обработанных фотографий
+                            li.card-info до 50 фотографий в детальной ретуши
+                            li.card-info Сроки отдачи - до 60 дней
+                            li.card-info Обработка фотографий (сроки готовности до 5 дней)
+                .card
+                    .card-header
+                        h3.card-name “Премиум”
+                        h1.card-price 100 000 ₽
+                        p.card-time-info до 12 часов
+                    .card-body
+                        ul.card-body-list
+                            li.card-info Съёмка до 12 часов
+                            li.card-info Предварительная консультация
+                            li.card-info Помощь в подборе локаций.
+                            li.card-info 700 обработанных фотографий
+                            li.card-info Фотокнига премиум качества
+                            li.card-info Сроки отдачи - до 30 дней!
+                            li.card-info Обработка фотографий вне очереди (сроки готовности до 5 дней)
+        footer
+            .contacts#contacts
+                h1.title-contacts Контакты
+                .content-contacts
+                    .phone-email-info
+                        .phone-email-label
+                            p.contact-text Телефон:
+                            p.contact-text Почта:
+                        .phone-email
+                            p.contact-text +7 (926) 987-65-43
+                            p.contact-text savva@gmail.com
+                    .messengers-info
+                        img.icon(src="materials/whatsapp.svg")
+                        img.icon(src="materials/telegram.svg")
+                        img.icon(src="materials/vk.svg")
+            .signature ©️ Savva Polischuk 2024
+
+        script(src="main.js")

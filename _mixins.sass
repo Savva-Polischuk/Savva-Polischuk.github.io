@@ -1,0 +1,24 @@
+//mixins
+=flex-column
+    display: flex
+    flex-direction: column
+
+
+=flex-center($space: center)
+    display: flex
+    justify-content: $space
+    align-items: center
+
+=color-revers
+    background-color: white
+    color: black
+
+=chapter
+    +flex-column
+    +flex-center($space: space-around)
+
+=main-font
+    font:
+        family: "Montserrat"
+        size: 18px
+

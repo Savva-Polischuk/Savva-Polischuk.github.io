@@ -1,0 +1,291 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Montserrat";
+  src: url("./fonts/Montserrat-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Prata";
+  src: url("./fonts/Prata-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+body a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1, header, h3 {
+  font-family: "Prata";
+  font-weight: 400;
+}
+
+ul {
+  list-style: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+  color: black;
+}
+header li {
+  font-size: 20px;
+}
+
+.logo-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 25%;
+}
+
+.logo {
+  width: 15%;
+}
+
+.logo-name {
+  font-size: 30px;
+  white-space: nowrap;
+}
+
+.nav-ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 45%;
+}
+
+.slider {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.slider .slider-arrows {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  height: auto;
+  align-self: stretch;
+  width: 8%;
+  background-color: rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+}
+.slider .slider-arrows .arrow {
+  width: 50%;
+}
+
+.slider-img {
+  width: 84%;
+  position: relative;
+  height: inherit;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slider-img .img-window {
+  position: relative;
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slider-img .photo {
+  width: 100%;
+  aspect-ratio: 4/3;
+  transition: 2s;
+}
+
+.not-display {
+  display: none;
+}
+
+.prev {
+  order: 1;
+}
+
+.active {
+  order: 2;
+}
+
+.next {
+  order: 3;
+}
+
+.about-me {
+  display: flex;
+  flex-direction: column;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 790px;
+}
+
+.content-about {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.about-photo {
+  width: 482px;
+}
+
+.about-info {
+  display: flex;
+  flex-direction: column;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-items: start;
+  width: 40%;
+  height: 100%;
+}
+.about-info .phrase, .about-info .contacts-btn {
+  font-family: "Montserrat";
+  font-size: 20px;
+}
+.about-info .contacts-btn {
+  border: none;
+  background-color: white;
+  height: 53px;
+  width: 190px;
+  transition: 500ms;
+}
+.about-info .contacts-btn:hover {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.pricing {
+  display: flex;
+  flex-direction: column;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 700px;
+}
+.pricing .content-pricing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3%;
+  height: 80%;
+}
+.pricing .content-pricing .card {
+  width: 25%;
+  height: 100%;
+}
+.pricing .content-pricing .card .card-header {
+  display: flex;
+  flex-direction: column;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+  color: black;
+  height: 30%;
+}
+.pricing .content-pricing .card .card-header .card-time-info {
+  font-family: "Montserrat";
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.5);
+}
+.pricing .content-pricing .card .card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 70%;
+  background-color: rgba(255, 255, 255, 0.1);
+  box-sizing: border-box;
+  padding: 5%;
+  font-family: "Montserrat";
+  font-size: 18px;
+}
+.pricing .content-pricing .card .card-body .card-body-list, .pricing .content-pricing .card .card-body .services-list, .pricing .content-pricing .card .card-body .first-card-body-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100%;
+}
+.pricing .content-pricing .card .card-body .card-body-list .card-info::before, .pricing .content-pricing .card .card-body .services-list .card-info::before, .pricing .content-pricing .card .card-body .first-card-body-list .card-info::before {
+  content: "·";
+  float: left;
+  padding: 0 0.5em 0 0.5em;
+}
+.pricing .content-pricing .card .card-body .first-card-body-list {
+  height: 60%;
+}
+.pricing .content-pricing .card .card-body .services-list {
+  height: 20%;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 200px;
+}
+.contacts .content-contacts {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+  height: 30%;
+}
+.contacts .content-contacts .phone-email-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 30%;
+  height: 100%;
+  font-family: "Montserrat";
+  font-size: 18px;
+}
+.contacts .content-contacts .phone-email-info .phone-email, .contacts .content-contacts .phone-email-info .phone-email-label {
+  display: flex;
+  flex-direction: column;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-items: stretch;
+  height: 100%;
+}
+.contacts .content-contacts .messengers-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 20%;
+}
+.contacts .content-contacts .messengers-info .icon {
+  width: 20%;
+  cursor: pointer;
+}
+
+.signature {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  font-family: "Montserrat";
+  font-size: 10px;
+}/*# sourceMappingURL=main.css.map */

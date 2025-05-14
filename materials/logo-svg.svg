@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 89.18 174.36">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 50px;
+        letter-spacing: .05em;
+      }
+
+      .cls-1, .cls-2 {
+        font-family: Perpetua, Perpetua;
+      }
+
+      .cls-2 {
+        font-size: 160px;
+        letter-spacing: .05em;
+      }
+    </style>
+  </defs>
+  <text class="cls-2" transform="translate(0 125.84) scale(1.19 1)"><tspan x="0" y="0">S</tspan></text>
+  <text class="cls-1" transform="translate(30.13 115.53)"><tspan x="0" y="0">v</tspan></text>
+  <text class="cls-1" transform="translate(30.13 61.53)"><tspan x="0" y="0">v</tspan></text>
+</svg>
